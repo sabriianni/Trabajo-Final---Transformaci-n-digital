@@ -1,0 +1,34 @@
+[1] TRABAJO FINAL: Transformación Digital en las Organizaciones
+[2] Asignatura: Transformación Digital en las Organizaciones
+[3] Carrera: Licenciatura en Tecnologías Digitales
+[4] Organización: Complejo Las Lechuzas (Monte Hermoso) & Alojamientos (Multidestino)
+[5] 1. Fase I - Gestión de Proyectos IT
+[6] Identificación del Caso
+[7] El proyecto se centra en la transformación digital de un complejo de cabañas con base en Monte Hermoso, que actualmente expande su operación a las plazas de Córdoba y Bariloche. El desafío principal radica en la fragmentación de la identidad digital y la dependencia de canales de terceros (Booking.com), lo que genera altos costos por comisiones y procesos manuales de actualización de calendarios.
+[8] Relevamiento y Diagnóstico
+[9] Diagnóstico: Existe una desconexión entre la presencia en redes sociales (Instagram/Facebook) y la conversión de reservas. El líder del negocio carece de una visión unificada de la ocupación en los tres destinos, lo que dificulta la toma de decisiones estratégicas de precios y publicidad.
+[10] Arquitectura Digital Actual: * Sistemas: Extranets de plataformas de terceros (Booking).
+[11] Canales: Instagram y Facebook manejados de forma independiente.
+[12] Gestión: Comunicación directa por WhatsApp; carga manual de disponibilidad.
+[13] Propuesta de Acción y Arquitectura Deseada
+[14] Se propone el diseño de un Ecosistema Digital Centralizado que unifique la oferta.
+[15] Arquitectura Deseada: Portal Web Multidestino integrado a un Channel Manager (como Nobeds o Smoobu) para la sincronización en tiempo real.
+[16] Planificación (Backlog): Se opta por un Backlog debido a la naturaleza dinámica del desarrollo:
+[17] Historia 1: Como usuario, deseo filtrar cabañas por destino (Playa, Montaña, Sierras) en un solo sitio.
+[18] Historia 2: Como administrador, deseo que una reserva en la web bloquee automáticamente las fechas en Booking.
+[19] Evaluación de Impacto
+[20] Factibilidad Técnica: Alta, mediante el uso de Antigravity para la creación de herramientas personalizadas de gestión.
+[21] Factibilidad Económica: Muy positiva. La reducción de comisiones externas y la optimización de la pauta publicitaria dirigida justifican la inversión.
+[22] Factibilidad Operacional: Se elimina el riesgo de overbooking y se estandariza el proceso de incorporación (bienvenida) del huésped.
+[23] 2. Fase II - Innovación Tecnológica
+[24] Propuesta de Innovación: Herramienta de Decisión para Líderes
+[25] En lugar de una página web estática, se presenta una maqueta funcional en Antigravity que sirve como un tablero de control para el propietario.
+[26] Descripción de la Maqueta: Un panel administrativo donde se consolidan los datos de los tres destinos.
+[27] Funcionalidad para el Líder: El sistema permite visualizar la tasa de ocupación comparativa. Si el sistema detecta baja demanda en Monte Hermoso pero alta en Bariloche, sugiere automáticamente al líder desplazar la inversión publicitaria hacia el destino con mayor potencial de rentabilidad inmediata.
+[28] Selección de Tecnología: Se utiliza Antigravity por su capacidad de prototipado ágil y su facilidad para integrar flujos de datos. La arquitectura contempla la posibilidad de exportar el código para su posterior despliegue en infraestructuras profesionales como Hostinger Business, garantizando escalabilidad y propiedad del código.
+[29] 3. Artefactos Requeridos
+[30] Diagrama de Arquitectura Actual: Mapa de silos de información actuales.
+[31] Diagrama de Arquitectura Deseada: Esquema de la web centralizadora y el Channel Manager.
+[32] Roadmap de Transformación: Timeline desde la consolidación marcaria hasta la automatización total.
+[33] Backlog de Producto: Priorización de funcionalidades del portal.
+[34] Prototipo (Maqueta): Presentación visual de la herramienta de decisión diseñada en Antigravity.

@@ -1,0 +1,181 @@
+Row 1: A:id_reserva | B:destino | C:tipo_alojamiento | D:canal_reserva | E:fecha_reserva | F:cantidad_noches | G:tarifa_noche_ars | H:ingreso_total_ars | I:ocupacion_destino_pct | J:comision_booking_ars
+Row 2: A:1 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-03-12 | F:5 | G:129256 | H:646280 | I:63 | J:96942
+Row 3: A:2 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-05-20 | F:3 | G:177397 | H:532191 | I:82 | J:79828.64999999999
+Row 4: A:3 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-03-01 | F:10 | G:168907 | H:1689070 | I:41 | J:253360.5
+Row 5: A:4 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-05-20 | F:8 | G:128893 | H:1031144 | I:83 | J:154671.6
+Row 6: A:5 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-02-10 | F:8 | G:144597 | H:1156776 | I:72 | J:173516.4
+Row 7: A:6 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-01-27 | F:3 | G:139797 | H:419391 | I:46 | J:62908.65
+Row 8: A:7 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-03-09 | F:2 | G:235647 | H:471294 | I:89 | J:0
+Row 9: A:8 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-01-21 | F:10 | G:138427 | H:1384270 | I:78 | J:207640.5
+Row 10: A:9 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-01-12 | F:5 | G:137930 | H:689650 | I:60 | J:103447.5
+Row 11: A:10 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-03-13 | F:9 | G:173320 | H:1559880 | I:63 | J:0
+Row 12: A:11 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-03-10 | F:3 | G:169840 | H:509520 | I:80 | J:76428
+Row 13: A:12 | B:Monte Hermoso | C:Cabaña Standard | D:Web Propia | E:2026-02-11 | F:9 | G:139735 | H:1257615 | I:57 | J:0
+Row 14: A:13 | B:Córdoba | C:Cabaña Standard | D:Web Propia | E:2026-03-25 | F:2 | G:130021 | H:260042 | I:57 | J:0
+Row 15: A:14 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-02-24 | F:7 | G:167869 | H:1175083 | I:95 | J:176262.45
+Row 16: A:15 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-28 | F:4 | G:174718 | H:698872 | I:79 | J:104830.8
+Row 17: A:16 | B:Monte Hermoso | C:Suite Premium | D:WhatsApp | E:2026-03-09 | F:8 | G:166484 | H:1331872 | I:65 | J:0
+Row 18: A:17 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-05-11 | F:9 | G:151915 | H:1367235 | I:76 | J:205085.25
+Row 19: A:18 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-04-19 | F:3 | G:140432 | H:421296 | I:64 | J:63194.4
+Row 20: A:19 | B:Córdoba | C:Suite Premium | D:Instagram | E:2026-03-06 | F:10 | G:101504 | H:1015040 | I:62 | J:0
+Row 21: A:20 | B:Córdoba | C:Cabaña Familiar | D:WhatsApp | E:2026-03-29 | F:3 | G:138469 | H:415407 | I:82 | J:0
+Row 22: A:21 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-03-09 | F:10 | G:113416 | H:1134160 | I:72 | J:0
+Row 23: A:22 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-05-10 | F:5 | G:110032 | H:550160 | I:63 | J:0
+Row 24: A:23 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-01-01 | F:7 | G:154042 | H:1078294 | I:41 | J:0
+Row 25: A:24 | B:Monte Hermoso | C:Cabaña Familiar | D:Instagram | E:2026-03-03 | F:2 | G:121571 | H:243142 | I:76 | J:0
+Row 26: A:25 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-01-18 | F:10 | G:106483 | H:1064830 | I:48 | J:159724.5
+Row 27: A:26 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-02-12 | F:6 | G:169163 | H:1014978 | I:82 | J:0
+Row 28: A:27 | B:Monte Hermoso | C:Suite Premium | D:Instagram | E:2026-02-21 | F:6 | G:142296 | H:853776 | I:63 | J:0
+Row 29: A:28 | B:Bariloche | C:Cabaña Familiar | D:WhatsApp | E:2026-01-31 | F:5 | G:169451 | H:847255 | I:77 | J:0
+Row 30: A:29 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-02-28 | F:5 | G:140942 | H:704710 | I:77 | J:105706.5
+Row 31: A:30 | B:Córdoba | C:Cabaña Standard | D:Web Propia | E:2026-01-18 | F:2 | G:143309 | H:286618 | I:59 | J:0
+Row 32: A:31 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-05-05 | F:5 | G:170678 | H:853390 | I:63 | J:128008.5
+Row 33: A:32 | B:Córdoba | C:Suite Premium | D:Instagram | E:2026-05-28 | F:9 | G:131850 | H:1186650 | I:85 | J:0
+Row 34: A:33 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-04-21 | F:7 | G:195519 | H:1368633 | I:88 | J:205294.95
+Row 35: A:34 | B:Bariloche | C:Cabaña Standard | D:WhatsApp | E:2026-01-26 | F:2 | G:192772 | H:385544 | I:98 | J:0
+Row 36: A:35 | B:Bariloche | C:Cabaña Standard | D:WhatsApp | E:2026-03-05 | F:5 | G:164931 | H:824655 | I:92 | J:0
+Row 37: A:36 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-03-13 | F:9 | G:172742 | H:1554678 | I:77 | J:233201.7
+Row 38: A:37 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-01-26 | F:2 | G:225477 | H:450954 | I:92 | J:0
+Row 39: A:38 | B:Monte Hermoso | C:Cabaña Standard | D:Instagram | E:2026-02-12 | F:8 | G:153653 | H:1229224 | I:70 | J:0
+Row 40: A:39 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-02-12 | F:8 | G:90282 | H:722256 | I:64 | J:0
+Row 41: A:40 | B:Bariloche | C:Cabaña Familiar | D:Instagram | E:2026-03-15 | F:8 | G:231303 | H:1850424 | I:98 | J:0
+Row 42: A:41 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-02-09 | F:5 | G:138890 | H:694450 | I:68 | J:0
+Row 43: A:42 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-01-16 | F:7 | G:97492 | H:682444 | I:43 | J:0
+Row 44: A:43 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-02-10 | F:2 | G:166562 | H:333124 | I:60 | J:0
+Row 45: A:44 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-03-02 | F:8 | G:105713 | H:845704 | I:76 | J:126855.6
+Row 46: A:45 | B:Monte Hermoso | C:Cabaña Standard | D:Web Propia | E:2026-01-21 | F:8 | G:176163 | H:1409304 | I:77 | J:0
+Row 47: A:46 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-02-22 | F:7 | G:131285 | H:918995 | I:71 | J:0
+Row 48: A:47 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-03-18 | F:9 | G:181441 | H:1632969 | I:77 | J:244945.35
+Row 49: A:48 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-01-26 | F:3 | G:160468 | H:481404 | I:53 | J:0
+Row 50: A:49 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-01-18 | F:5 | G:148434 | H:742170 | I:73 | J:111325.5
+Row 51: A:50 | B:Monte Hermoso | C:Suite Premium | D:Booking | E:2026-03-19 | F:10 | G:91025 | H:910250 | I:75 | J:136537.5
+Row 52: A:51 | B:Bariloche | C:Cabaña Standard | D:Instagram | E:2026-02-04 | F:6 | G:155129 | H:930774 | I:78 | J:0
+Row 53: A:52 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-03-14 | F:5 | G:194058 | H:970290 | I:76 | J:0
+Row 54: A:53 | B:Monte Hermoso | C:Cabaña Familiar | D:Web Propia | E:2026-05-10 | F:9 | G:122914 | H:1106226 | I:43 | J:0
+Row 55: A:54 | B:Monte Hermoso | C:Cabaña Familiar | D:Web Propia | E:2026-01-12 | F:2 | G:133719 | H:267438 | I:48 | J:0
+Row 56: A:55 | B:Córdoba | C:Cabaña Standard | D:Instagram | E:2026-04-24 | F:10 | G:192493 | H:1924930 | I:82 | J:0
+Row 57: A:56 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-02-08 | F:10 | G:104722 | H:1047220 | I:78 | J:157083
+Row 58: A:57 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-02-02 | F:2 | G:140404 | H:280808 | I:78 | J:0
+Row 59: A:58 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-03-05 | F:3 | G:136357 | H:409071 | I:75 | J:0
+Row 60: A:59 | B:Bariloche | C:Suite Premium | D:Instagram | E:2026-02-09 | F:5 | G:253325 | H:1266625 | I:80 | J:0
+Row 61: A:60 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-02-15 | F:7 | G:143964 | H:1007748 | I:55 | J:0
+Row 62: A:61 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-01-28 | F:8 | G:254316 | H:2034528 | I:76 | J:305179.2
+Row 63: A:62 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-03-31 | F:6 | G:247549 | H:1485294 | I:82 | J:222794.1
+Row 64: A:63 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-04-13 | F:7 | G:126517 | H:885619 | I:44 | J:132842.85
+Row 65: A:64 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-13 | F:10 | G:183404 | H:1834040 | I:75 | J:275106
+Row 66: A:65 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-02-15 | F:6 | G:95014 | H:570084 | I:46 | J:0
+Row 67: A:66 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-03-22 | F:8 | G:179457 | H:1435656 | I:87 | J:215348.4
+Row 68: A:67 | B:Monte Hermoso | C:Suite Premium | D:Booking | E:2026-02-18 | F:6 | G:95817 | H:574902 | I:67 | J:86235.3
+Row 69: A:68 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-02-20 | F:7 | G:146531 | H:1025717 | I:44 | J:0
+Row 70: A:69 | B:Córdoba | C:Suite Premium | D:Instagram | E:2026-03-22 | F:3 | G:194339 | H:583017 | I:74 | J:0
+Row 71: A:70 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-03-25 | F:8 | G:191384 | H:1531072 | I:73 | J:229660.8
+Row 72: A:71 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-04-08 | F:4 | G:180676 | H:722704 | I:74 | J:108405.6
+Row 73: A:72 | B:Bariloche | C:Cabaña Standard | D:Web Propia | E:2026-03-19 | F:6 | G:167549 | H:1005294 | I:88 | J:0
+Row 74: A:73 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-04-30 | F:9 | G:157954 | H:1421586 | I:68 | J:0
+Row 75: A:74 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-02-13 | F:3 | G:137196 | H:411588 | I:87 | J:0
+Row 76: A:75 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-01-24 | F:5 | G:188184 | H:940920 | I:74 | J:0
+Row 77: A:76 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-01-07 | F:2 | G:122092 | H:244184 | I:70 | J:0
+Row 78: A:77 | B:Córdoba | C:Cabaña Standard | D:WhatsApp | E:2026-04-27 | F:8 | G:182544 | H:1460352 | I:67 | J:0
+Row 79: A:78 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-04-13 | F:5 | G:119342 | H:596710 | I:55 | J:0
+Row 80: A:79 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-02-15 | F:10 | G:150889 | H:1508890 | I:43 | J:0
+Row 81: A:80 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-04-27 | F:4 | G:160901 | H:643604 | I:88 | J:96540.60000000001
+Row 82: A:81 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-05-10 | F:8 | G:171810 | H:1374480 | I:83 | J:0
+Row 83: A:82 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-04-26 | F:6 | G:122406 | H:734436 | I:80 | J:0
+Row 84: A:83 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-05-05 | F:5 | G:175992 | H:879960 | I:89 | J:0
+Row 85: A:84 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-03-11 | F:7 | G:131904 | H:923328 | I:74 | J:0
+Row 86: A:85 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-04-09 | F:4 | G:118043 | H:472172 | I:44 | J:70825.8
+Row 87: A:86 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-30 | F:8 | G:148161 | H:1185288 | I:81 | J:177793.2
+Row 88: A:87 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-01-06 | F:8 | G:202518 | H:1620144 | I:75 | J:243021.6
+Row 89: A:88 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-04-18 | F:10 | G:237978 | H:2379780 | I:98 | J:356967
+Row 90: A:89 | B:Córdoba | C:Cabaña Standard | D:WhatsApp | E:2026-05-05 | F:5 | G:135774 | H:678870 | I:82 | J:0
+Row 91: A:90 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-04-14 | F:4 | G:250166 | H:1000664 | I:89 | J:150099.6
+Row 92: A:91 | B:Monte Hermoso | C:Suite Premium | D:Instagram | E:2026-01-07 | F:8 | G:167580 | H:1340640 | I:76 | J:0
+Row 93: A:92 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-04-20 | F:4 | G:160515 | H:642060 | I:66 | J:96309
+Row 94: A:93 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-02-24 | F:9 | G:132840 | H:1195560 | I:61 | J:179334
+Row 95: A:94 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-03-06 | F:3 | G:201644 | H:604932 | I:75 | J:90739.8
+Row 96: A:95 | B:Córdoba | C:Cabaña Familiar | D:Web Propia | E:2026-02-27 | F:3 | G:185426 | H:556278 | I:57 | J:0
+Row 97: A:96 | B:Monte Hermoso | C:Cabaña Standard | D:Instagram | E:2026-01-06 | F:4 | G:121266 | H:485064 | I:48 | J:0
+Row 98: A:97 | B:Bariloche | C:Suite Premium | D:Web Propia | E:2026-02-25 | F:9 | G:231680 | H:2085120 | I:83 | J:0
+Row 99: A:98 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-01-30 | F:4 | G:180768 | H:723072 | I:78 | J:108460.8
+Row 100: A:99 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-05-28 | F:8 | G:151990 | H:1215920 | I:67 | J:182388
+Row 101: A:100 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-03-04 | F:3 | G:129529 | H:388587 | I:78 | J:0
+Row 102: A:101 | B:Monte Hermoso | C:Suite Premium | D:WhatsApp | E:2026-01-11 | F:7 | G:159827 | H:1118789 | I:67 | J:0
+Row 103: A:102 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-03-29 | F:2 | G:155057 | H:310114 | I:86 | J:46517.1
+Row 104: A:103 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-04-28 | F:4 | G:147080 | H:588320 | I:51 | J:88248
+Row 105: A:104 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-03-11 | F:10 | G:163372 | H:1633720 | I:84 | J:0
+Row 106: A:105 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-03-10 | F:7 | G:251635 | H:1761445 | I:82 | J:0
+Row 107: A:106 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-03-04 | F:9 | G:164691 | H:1482219 | I:79 | J:222332.85
+Row 108: A:107 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-05-07 | F:7 | G:123834 | H:866838 | I:86 | J:130025.7
+Row 109: A:108 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-03-29 | F:6 | G:168139 | H:1008834 | I:57 | J:151325.1
+Row 110: A:109 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-01-22 | F:5 | G:194381 | H:971905 | I:81 | J:145785.75
+Row 111: A:110 | B:Bariloche | C:Cabaña Standard | D:Web Propia | E:2026-05-02 | F:9 | G:198743 | H:1788687 | I:75 | J:0
+Row 112: A:111 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-03-04 | F:6 | G:177026 | H:1062156 | I:77 | J:159323.4
+Row 113: A:112 | B:Bariloche | C:Suite Premium | D:Web Propia | E:2026-03-30 | F:8 | G:237771 | H:1902168 | I:92 | J:0
+Row 114: A:113 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-03-11 | F:6 | G:172951 | H:1037706 | I:82 | J:155655.9
+Row 115: A:114 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-01-31 | F:10 | G:114267 | H:1142670 | I:52 | J:0
+Row 116: A:115 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-05-31 | F:10 | G:168222 | H:1682220 | I:58 | J:0
+Row 117: A:116 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-02-28 | F:7 | G:113519 | H:794633 | I:59 | J:0
+Row 118: A:117 | B:Monte Hermoso | C:Cabaña Standard | D:WhatsApp | E:2026-03-12 | F:2 | G:97146 | H:194292 | I:75 | J:0
+Row 119: A:118 | B:Bariloche | C:Cabaña Standard | D:Web Propia | E:2026-05-06 | F:3 | G:254389 | H:763167 | I:75 | J:0
+Row 120: A:119 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-04-23 | F:7 | G:124164 | H:869148 | I:58 | J:130372.2
+Row 121: A:120 | B:Bariloche | C:Cabaña Familiar | D:Instagram | E:2026-01-30 | F:3 | G:192521 | H:577563 | I:90 | J:0
+Row 122: A:121 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-01-14 | F:4 | G:109555 | H:438220 | I:76 | J:0
+Row 123: A:122 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-01-31 | F:10 | G:240197 | H:2401970 | I:88 | J:360295.5
+Row 124: A:123 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-02-27 | F:10 | G:149856 | H:1498560 | I:83 | J:0
+Row 125: A:124 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-20 | F:6 | G:214531 | H:1287186 | I:94 | J:193077.9
+Row 126: A:125 | B:Monte Hermoso | C:Suite Premium | D:Web Propia | E:2026-01-26 | F:5 | G:171987 | H:859935 | I:53 | J:0
+Row 127: A:126 | B:Bariloche | C:Cabaña Standard | D:Web Propia | E:2026-03-03 | F:4 | G:212350 | H:849400 | I:77 | J:0
+Row 128: A:127 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-05-01 | F:6 | G:94278 | H:565668 | I:54 | J:84850.2
+Row 129: A:128 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-04-27 | F:3 | G:230096 | H:690288 | I:82 | J:0
+Row 130: A:129 | B:Bariloche | C:Suite Premium | D:WhatsApp | E:2026-05-31 | F:5 | G:195723 | H:978615 | I:78 | J:0
+Row 131: A:130 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-03-10 | F:4 | G:109359 | H:437436 | I:58 | J:65615.39999999999
+Row 132: A:131 | B:Monte Hermoso | C:Suite Premium | D:WhatsApp | E:2026-05-26 | F:6 | G:147560 | H:885360 | I:47 | J:0
+Row 133: A:132 | B:Bariloche | C:Suite Premium | D:Web Propia | E:2026-04-14 | F:6 | G:205597 | H:1233582 | I:92 | J:0
+Row 134: A:133 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-01-11 | F:8 | G:236276 | H:1890208 | I:85 | J:283531.2
+Row 135: A:134 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-02-28 | F:2 | G:188117 | H:376234 | I:72 | J:56435.1
+Row 136: A:135 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-05-01 | F:10 | G:185394 | H:1853940 | I:83 | J:278091
+Row 137: A:136 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-22 | F:9 | G:151959 | H:1367631 | I:90 | J:205144.65
+Row 138: A:137 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-01-27 | F:4 | G:183228 | H:732912 | I:88 | J:109936.8
+Row 139: A:138 | B:Córdoba | C:Suite Premium | D:Web Propia | E:2026-04-13 | F:10 | G:104809 | H:1048090 | I:84 | J:0
+Row 140: A:139 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-01-30 | F:8 | G:157449 | H:1259592 | I:40 | J:188938.8
+Row 141: A:140 | B:Córdoba | C:Cabaña Familiar | D:WhatsApp | E:2026-04-16 | F:2 | G:124586 | H:249172 | I:88 | J:0
+Row 142: A:141 | B:Bariloche | C:Cabaña Familiar | D:Web Propia | E:2026-04-24 | F:2 | G:166680 | H:333360 | I:83 | J:0
+Row 143: A:142 | B:Córdoba | C:Cabaña Familiar | D:Booking | E:2026-04-23 | F:9 | G:115915 | H:1043235 | I:56 | J:156485.25
+Row 144: A:143 | B:Córdoba | C:Cabaña Standard | D:Web Propia | E:2026-02-10 | F:6 | G:172199 | H:1033194 | I:55 | J:0
+Row 145: A:144 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-01-30 | F:9 | G:115396 | H:1038564 | I:64 | J:155784.6
+Row 146: A:145 | B:Bariloche | C:Cabaña Familiar | D:Instagram | E:2026-05-11 | F:6 | G:194459 | H:1166754 | I:90 | J:0
+Row 147: A:146 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-02-07 | F:8 | G:164983 | H:1319864 | I:94 | J:197979.6
+Row 148: A:147 | B:Córdoba | C:Cabaña Standard | D:WhatsApp | E:2026-01-18 | F:6 | G:154387 | H:926322 | I:76 | J:0
+Row 149: A:148 | B:Córdoba | C:Cabaña Standard | D:Booking | E:2026-03-14 | F:6 | G:176931 | H:1061586 | I:86 | J:159237.9
+Row 150: A:149 | B:Monte Hermoso | C:Cabaña Familiar | D:Booking | E:2026-03-30 | F:7 | G:162340 | H:1136380 | I:74 | J:170457
+Row 151: A:150 | B:Bariloche | C:Cabaña Familiar | D:Web Propia | E:2026-02-18 | F:5 | G:214946 | H:1074730 | I:87 | J:0
+Row 152: A:151 | B:Monte Hermoso | C:Cabaña Familiar | D:WhatsApp | E:2026-01-12 | F:7 | G:151993 | H:1063951 | I:64 | J:0
+Row 153: A:152 | B:Bariloche | C:Suite Premium | D:Instagram | E:2026-02-08 | F:9 | G:144852 | H:1303668 | I:79 | J:0
+Row 154: A:153 | B:Córdoba | C:Cabaña Familiar | D:Instagram | E:2026-01-26 | F:9 | G:113069 | H:1017621 | I:88 | J:0
+Row 155: A:154 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-04-15 | F:4 | G:149807 | H:599228 | I:90 | J:89884.2
+Row 156: A:155 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-04-12 | F:3 | G:251642 | H:754926 | I:85 | J:113238.9
+Row 157: A:156 | B:Córdoba | C:Cabaña Familiar | D:WhatsApp | E:2026-03-23 | F:9 | G:170912 | H:1538208 | I:57 | J:0
+Row 158: A:157 | B:Córdoba | C:Suite Premium | D:Booking | E:2026-03-15 | F:5 | G:197880 | H:989400 | I:60 | J:148410
+Row 159: A:158 | B:Bariloche | C:Suite Premium | D:Instagram | E:2026-01-26 | F:9 | G:161805 | H:1456245 | I:97 | J:0
+Row 160: A:159 | B:Bariloche | C:Cabaña Standard | D:Instagram | E:2026-03-25 | F:2 | G:178452 | H:356904 | I:86 | J:0
+Row 161: A:160 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-05-16 | F:8 | G:214177 | H:1713416 | I:96 | J:257012.4
+Row 162: A:161 | B:Monte Hermoso | C:Cabaña Standard | D:Booking | E:2026-04-08 | F:5 | G:155230 | H:776150 | I:77 | J:116422.5
+Row 163: A:162 | B:Monte Hermoso | C:Suite Premium | D:Booking | E:2026-03-07 | F:9 | G:123466 | H:1111194 | I:40 | J:166679.1
+Row 164: A:163 | B:Bariloche | C:Suite Premium | D:Instagram | E:2026-05-20 | F:4 | G:149681 | H:598724 | I:89 | J:0
+Row 165: A:164 | B:Bariloche | C:Cabaña Familiar | D:Instagram | E:2026-04-19 | F:6 | G:199878 | H:1199268 | I:84 | J:0
+Row 166: A:165 | B:Monte Hermoso | C:Cabaña Familiar | D:Instagram | E:2026-01-28 | F:5 | G:139986 | H:699930 | I:76 | J:0
+Row 167: A:166 | B:Bariloche | C:Suite Premium | D:Web Propia | E:2026-03-17 | F:2 | G:248794 | H:497588 | I:96 | J:0
+Row 168: A:167 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-01-13 | F:9 | G:249161 | H:2242449 | I:84 | J:336367.35
+Row 169: A:168 | B:Monte Hermoso | C:Cabaña Familiar | D:Web Propia | E:2026-02-26 | F:5 | G:171381 | H:856905 | I:56 | J:0
+Row 170: A:169 | B:Córdoba | C:Suite Premium | D:WhatsApp | E:2026-02-05 | F:3 | G:182242 | H:546726 | I:57 | J:0
+Row 171: A:170 | B:Bariloche | C:Cabaña Standard | D:WhatsApp | E:2026-05-29 | F:7 | G:235991 | H:1651937 | I:79 | J:0
+Row 172: A:171 | B:Monte Hermoso | C:Cabaña Familiar | D:Instagram | E:2026-04-17 | F:4 | G:116318 | H:465272 | I:48 | J:0
+Row 173: A:172 | B:Córdoba | C:Cabaña Familiar | D:WhatsApp | E:2026-05-16 | F:10 | G:135720 | H:1357200 | I:65 | J:0
+Row 174: A:173 | B:Bariloche | C:Cabaña Familiar | D:Instagram | E:2026-03-17 | F:7 | G:245412 | H:1717884 | I:78 | J:0
+Row 175: A:174 | B:Bariloche | C:Cabaña Standard | D:Instagram | E:2026-02-27 | F:8 | G:250853 | H:2006824 | I:92 | J:0
+Row 176: A:175 | B:Bariloche | C:Cabaña Familiar | D:Booking | E:2026-01-04 | F:6 | G:210329 | H:1261974 | I:78 | J:189296.1
+Row 177: A:176 | B:Bariloche | C:Suite Premium | D:Booking | E:2026-03-09 | F:8 | G:247795 | H:1982360 | I:95 | J:297354
+Row 178: A:177 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-05-01 | F:2 | G:221205 | H:442410 | I:92 | J:66361.5
+Row 179: A:178 | B:Bariloche | C:Cabaña Standard | D:Instagram | E:2026-01-17 | F:9 | G:259195 | H:2332755 | I:97 | J:0
+Row 180: A:179 | B:Bariloche | C:Cabaña Standard | D:Web Propia | E:2026-02-05 | F:2 | G:144877 | H:289754 | I:84 | J:0
+Row 181: A:180 | B:Bariloche | C:Cabaña Standard | D:Booking | E:2026-05-18 | F:4 | G:190940 | H:763760 | I:89 | J:114564

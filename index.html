@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Lechuzas - Dashboard de Transformación Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js Secure CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Las Lechuzas</h2>
+                    <span>Panel Ejecutivo</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <div class="nav-item active" data-tab="dashboard-tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+                            </svg>
+                            <span>Dashboard Principal</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-tab="reservations-tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12M8.25 17.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-3.75 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                            <span>Registro de Reservas</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-tab="roadmap-tab">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.375M9 18h3.375m-6.75-9 3 3m0 0 3-3m-3 3V1.5m6 9 3 3m0 0 3-3m-3 3V1.5m-18 19.5h18" />
+                            </svg>
+                            <span>Proyecto Académico</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <h4>Trabajo Final</h4>
+                <p>Lic. Tecnologías Digitales</p>
+                <p style="font-size: 0.65rem; color: var(--text-muted); margin-top: 0.5rem;">Asignatura: Transf. Digital</p>
+            </div>
+        </aside>
+
+        <!-- Main Body -->
+        <main class="main-content">
+            <!-- Header Section -->
+            <header>
+                <div>
+                    <h1 id="page-title">Tablero de Decisiones</h1>
+                    <p id="page-subtitle">Consolidado Multidestino: Monte Hermoso, Córdoba & Bariloche</p>
+                </div>
+                
+                <!-- Quick Destination Filter -->
+                <div class="global-filters" id="destination-filters-container">
+                    <button class="filter-btn active" data-destination="all">Todos los Destinos</button>
+                    <button class="filter-btn" data-destination="Bariloche">Bariloche (Montaña)</button>
+                    <button class="filter-btn" data-destination="Córdoba">Córdoba (Sierras)</button>
+                    <button class="filter-btn" data-destination="Monte Hermoso">Monte Hermoso (Playa)</button>
+                </div>
+            </header>
+
+            <!-- ================= TAB: DASHBOARD PRINCIPAL ================= -->
+            <div id="dashboard-tab" class="tab-content active">
+                
+                <!-- KPI Section -->
+                <div class="kpi-grid">
+                    <!-- KPI 1: Reservas Totales -->
+                    <div class="glass-panel kpi-card" data-type="bookings">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Reservas Totales</span>
+                            <div class="kpi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kpi-value" id="kpi-total-bookings">0</div>
+                            <div class="kpi-footer">
+                                <span class="trend-badge positive">
+                                    <span id="kpi-total-nights">0</span>
+                                </span>
+                                <span class="trend-label">noches vendidas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI 2: Ingresos Totales -->
+                    <div class="glass-panel kpi-card" data-type="revenue">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Ingresos Totales</span>
+                            <div class="kpi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kpi-value" id="kpi-total-revenue">$0</div>
+                            <div class="kpi-footer">
+                                <span class="trend-badge positive">
+                                    <span id="kpi-adr">$0</span>
+                                </span>
+                                <span class="trend-label">tarifa promedio/noche (ADR)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI 3: Ocupación Promedio -->
+                    <div class="glass-panel kpi-card" data-type="occupancy">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Ocupación Promedio</span>
+                            <div class="kpi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kpi-value" id="kpi-avg-occupancy">0%</div>
+                            <div class="kpi-footer">
+                                <span class="trend-badge positive" id="kpi-occupancy-trend">Sólido</span>
+                                <span class="trend-label">estado de demanda</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI 4: Comisiones Booking -->
+                    <div class="glass-panel kpi-card" data-type="commissions">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Comisiones Booking.com</span>
+                            <div class="kpi-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 20px; height: 20px;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="kpi-value text-danger" id="kpi-total-commissions">$0</div>
+                            <div class="kpi-footer">
+                                <span class="trend-badge neutral" id="kpi-commission-ratio">0%</span>
+                                <span class="trend-label">de los ingresos totales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIRST ROW CHARTS -->
+                <div class="charts-grid-row-1">
+                    <!-- Chart 1: Revenue over Time -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <h3>Evolución de Ingresos y Tendencia Estacional</h3>
+                            <button class="panel-action-btn" id="revenue-period-btn">Mensual (2026)</button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="revenueTimeChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Chart 2: Bookings by Channel -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <h3>Reservas por Canal</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="channelsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECOND ROW CHARTS -->
+                <div class="charts-grid-row-2">
+                    <!-- Chart 3: Occupancy by Destination -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <h3>Ocupación Promedio por Destino</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="occupancyDestChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Chart 4: Revenue by Accommodation Type -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <h3>Ingresos por Tipo de Alojamiento</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="roomTypeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WIDGETS ROW: AI ENGINE & COMMISSION SIMULATOR -->
+                <div class="insights-row">
+                    <!-- AI Engine - Decision Support Alerts -->
+                    <div class="glass-panel ai-engine">
+                        <div class="panel-header">
+                            <div class="ai-header-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" style="width: 22px; height: 22px;" class="ai-sparkle">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 21l-.813-5.096L3 15l5.096-.813L9 9l.813 5.096L15 15l-5.188.904ZM19.006 8.25l-.547 3.027-3.027.547 3.027.547.547 3.027 3.027-.547-3.027-.547-.547-3.027ZM14.25 4.5l-.234 1.302-1.302.234 1.302.234.234 1.302 1.302-.234-1.302-.234-.234-1.302Z" />
+                                </svg>
+                                <h3>Alertas de Demanda y Recomendaciones Estratégicas</h3>
+                            </div>
+                        </div>
+                        <div class="alerts-list" id="alerts-container">
+                            <!-- Populated dynamically via app.js -->
+                            <div class="alert-item info">
+                                <div class="alert-icon">⚡</div>
+                                <div class="alert-details">
+                                    <div class="alert-item-title">Analizando Datos...</div>
+                                    <div class="alert-desc">El motor de toma de decisiones está analizando el comportamiento de las reservas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Channel and commission simulator -->
+                    <div class="glass-panel sim-widget">
+                        <div>
+                            <div class="panel-header">
+                                <h3>Simulador de Desvío a Canales Directos</h3>
+                            </div>
+                            <p class="section-desc" style="margin-bottom: 1rem; font-size: 0.8rem;">
+                                Simule la migración de reservas desde **Booking.com** (que cobra 15% de comisión) hacia canales propios directos (**Web Propia, WhatsApp, Instagram**) que tienen costo de comisión 0%.
+                            </p>
+                            
+                            <div class="sim-container">
+                                <div class="sim-slider-group">
+                                    <div class="sim-slider-header">
+                                        <span>Porcentaje a Migrar:</span>
+                                        <span><strong id="slider-percentage-val">20%</strong> de Booking</span>
+                                    </div>
+                                    <input type="range" class="slider-input" id="conversion-slider" min="0" max="100" value="20">
+                                </div>
+
+                                <div class="sim-stats-grid">
+                                    <div class="sim-stat-card">
+                                        <span class="sim-stat-label">Comisiones Ahorradas</span>
+                                        <span class="sim-stat-value savings" id="sim-savings">$0</span>
+                                    </div>
+                                    <div class="sim-stat-card">
+                                        <span class="sim-stat-label">Incremento Margen Neto</span>
+                                        <span class="sim-stat-value extra-revenue" id="sim-profit-pct">+0.0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sim-explanation">
+                            💡 <strong>Consejo Práctico:</strong> Migrando un 30% de la cuota de Booking mediante campañas enfocadas en Instagram y una web autogestionable con motor de reservas centralizado, amortizará la inversión tecnológica en menos de 2 meses.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= TAB: REGISTRO DE RESERVAS ================= -->
+            <div id="reservations-tab" class="tab-content">
+                <!-- Filters Bar -->
+                <div class="filters-bar">
+                    <div class="search-input-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.637 10.637Z" />
+                        </svg>
+                        <input type="text" class="form-control" placeholder="Buscar por ID o detalles..." id="search-input">
+                    </div>
+                    
+                    <div>
+                        <select class="form-control" id="filter-destination">
+                            <option value="all">Todos los Destinos</option>
+                            <option value="Bariloche">Bariloche</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Monte Hermoso">Monte Hermoso</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select class="form-control" id="filter-channel">
+                            <option value="all">Todos los Canales</option>
+                            <option value="Booking">Booking.com</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Web Propia">Web Propia</option>
+                            <option value="Instagram">Instagram</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button class="btn-export" id="btn-export-csv">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 18px; height: 18px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            Exportar a CSV
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Custom Table -->
+                <div class="glass-panel table-panel">
+                    <div class="table-wrapper">
+                        <table class="custom-table" id="bookings-table">
+                            <thead>
+                                <tr>
+                                    <th class="sortable" data-sort="id_reserva">ID ↕</th>
+                                    <th class="sortable" data-sort="destino">Destino ↕</th>
+                                    <th class="sortable" data-sort="tipo_alojamiento">Alojamiento ↕</th>
+                                    <th class="sortable" data-sort="canal_reserva">Canal ↕</th>
+                                    <th class="sortable" data-sort="fecha_reserva">Fecha ↕</th>
+                                    <th class="sortable" data-sort="cantidad_noches">Noches ↕</th>
+                                    <th class="sortable" data-sort="tarifa_noche_ars">Tarifa/Noche ↕</th>
+                                    <th class="sortable" data-sort="ingreso_total_ars">Ingreso Total ↕</th>
+                                    <th class="sortable" data-sort="ocupacion_destino_pct">Ocupación % ↕</th>
+                                    <th class="sortable" data-sort="comision_booking_ars">Comisión ↕</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Populated dynamically via app.js -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-footer">
+                        <span class="table-info-text" id="table-showing-text">Mostrando reservas</span>
+                        <div class="pagination-controls" id="pagination-container">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= TAB: PROYECTO ACADÉMICO ================= -->
+            <div id="roadmap-tab" class="tab-content">
+                <div class="roadmap-container">
+                    
+                    <!-- Roadmap & Plan Area -->
+                    <div>
+                        <h3 class="section-title">Roadmap de Transformación Digital</h3>
+                        <p class="section-desc">Estrategia evolutiva desde la fragmentación de canales tradicionales hasta el ecosistema digital automatizado.</p>
+                        
+                        <div class="roadmap-timeline">
+                            <!-- Step 1 -->
+                            <div class="roadmap-step">
+                                <div class="roadmap-dot"></div>
+                                <div class="roadmap-card">
+                                    <h4>Fase I: Centralización e Identidad Digital <span>Duración: Mes 1 - 2</span></h4>
+                                    <p>Diseño y despliegue del Portal Web Multidestino unificado, unificando la oferta comercial de las cabañas de playa, sierras y montaña. Sustitución de la dispersión de redes por un punto central de reserva.</p>
+                                    <ul>
+                                        <li>Diseño de Portal Web en Astro/Vite</li>
+                                        <li>Creación de Identidad Digital Consistente</li>
+                                        <li>Campañas Orgánicas dirigidas</li>
+                                        <li>Configuración de Dominio Corporativo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="roadmap-step">
+                                <div class="roadmap-dot"></div>
+                                <div class="roadmap-card">
+                                    <h4>Fase II: Automatización e Integración de Inventario (Channel Manager) <span>Duración: Mes 3 - 4</span></h4>
+                                    <p>Integración técnica del portal directo con un Channel Manager (Smoobu/Nobeds) mediante iCal/API para sincronización bidireccional automática de calendarios, eliminando el overbooking.</p>
+                                    <ul>
+                                        <li>Integración de Smoobu/Nobeds</li>
+                                        <li>Sincronización con Booking en tiempo real</li>
+                                        <li>Habilitación de Motor de Reserva Directa</li>
+                                        <li>Pasarela de Pagos Local Integrada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="roadmap-step">
+                                <div class="roadmap-dot"></div>
+                                <div class="roadmap-card">
+                                    <h4>Fase III: Toma de Decisiones y Publicidad Dirigida <span>Duración: Mes 5+</span></h4>
+                                    <p>Despliegue formal del panel administrativo analítico (Maqueta diseñada aquí en Antigravity) para monitorear el desempeño por destino, reasignar pauta publicitaria en tiempo real y aplicar precios dinámicos.</p>
+                                    <ul>
+                                        <li>Uso de Inteligencia de Datos para Precios</li>
+                                        <li>Reasignación Automatizada de Pauta de Anuncios</li>
+                                        <li>Automatización de Mensajería de Bienvenida</li>
+                                        <li>Programación de Fidelización Post-Estadía</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Architectures Visualizations -->
+                    <div>
+                        <h3 class="section-title">Evolución de la Arquitectura de Sistemas</h3>
+                        <p class="section-desc">Comparativa técnica entre la fragmentación operativa actual (Silos) y la arquitectura unificada integrada con un Channel Manager.</p>
+                        
+                        <div class="architecture-grid">
+                            <!-- Actual Architecture -->
+                            <div class="arch-panel">
+                                <h4 style="color: var(--color-danger); text-align: center; margin-bottom: 0.5rem;">Arquitectura de Silos (Actual)</h4>
+                                <div class="arch-visualizer">
+                                    <svg viewBox="0 0 400 240" width="100%">
+                                        <!-- Silo WhatsApp / Redes -->
+                                        <rect x="20" y="30" width="100" height="60" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+                                        <text x="70" y="55" fill="white" font-size="12" text-anchor="middle" font-weight="bold">WhatsApp / IG</text>
+                                        <text x="70" y="75" fill="#9ca3af" font-size="9" text-anchor="middle">Gestión Manual</text>
+                                        
+                                        <!-- Silo Booking -->
+                                        <rect x="150" y="30" width="100" height="60" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+                                        <text x="200" y="55" fill="white" font-size="12" text-anchor="middle" font-weight="bold">Booking.com</text>
+                                        <text x="200" y="75" fill="#9ca3af" font-size="9" text-anchor="middle">Extranet / 15% Comisión</text>
+
+                                        <!-- Silo Hojas de cálculo -->
+                                        <rect x="280" y="30" width="100" height="60" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+                                        <text x="330" y="55" fill="white" font-size="12" text-anchor="middle" font-weight="bold">Hojas Excel</text>
+                                        <text x="330" y="75" fill="#9ca3af" font-size="9" text-anchor="middle">Ocupación Estática</text>
+
+                                        <!-- Silo Central (Leader) -->
+                                        <rect x="130" y="160" width="140" height="50" rx="6" fill="#111827" stroke="#9ca3af" stroke-dasharray="3 3"/>
+                                        <text x="200" y="185" fill="#ef4444" font-size="12" text-anchor="middle" font-weight="bold">Líder del Negocio</text>
+                                        <text x="200" y="200" fill="#9ca3af" font-size="9" text-anchor="middle">Desconexión y Overbooking</text>
+
+                                        <!-- Connections -->
+                                        <path d="M 70 90 L 70 145 L 140 160" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+                                        <path d="M 200 90 L 200 160" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+                                        <path d="M 330 90 L 330 145 L 260 160" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Desired Architecture -->
+                            <div class="arch-panel">
+                                <h4 style="color: var(--color-success); text-align: center; margin-bottom: 0.5rem;">Arquitectura Integrada (Deseada)</h4>
+                                <div class="arch-visualizer">
+                                    <svg viewBox="0 0 400 240" width="100%">
+                                        <!-- Web Directa -->
+                                        <rect x="20" y="20" width="90" height="50" rx="6" fill="#1f2937" stroke="#6366f1" stroke-width="2"/>
+                                        <text x="65" y="45" fill="white" font-size="11" text-anchor="middle" font-weight="bold">Web Propia</text>
+                                        <text x="65" y="60" fill="#3cba92" font-size="8" text-anchor="middle">Comisión 0%</text>
+
+                                        <!-- Booking -->
+                                        <rect x="290" y="20" width="90" height="50" rx="6" fill="#1f2937" stroke="#3b82f6" stroke-width="1.5"/>
+                                        <text x="335" y="45" fill="white" font-size="11" text-anchor="middle" font-weight="bold">Booking.com</text>
+                                        <text x="335" y="60" fill="#9ca3af" font-size="8" text-anchor="middle">Canal de Apoyo</text>
+
+                                        <!-- Channel Manager -->
+                                        <rect x="130" y="100" width="140" height="60" rx="8" fill="#1e1b4b" stroke="#a855f7" stroke-width="2.5"/>
+                                        <text x="200" y="125" fill="white" font-size="12" text-anchor="middle" font-weight="bold">Channel Manager</text>
+                                        <text x="200" y="140" fill="#d8b4fe" font-size="9" text-anchor="middle">Sincronización iCal/API</text>
+                                        <text x="200" y="150" fill="#a855f7" font-size="8" text-anchor="middle">Calendario Único</text>
+
+                                        <!-- Dashboard Ejecutivo -->
+                                        <rect x="130" y="195" width="140" height="35" rx="6" fill="#0f172a" stroke="#3cba92" stroke-width="1.5"/>
+                                        <text x="200" y="212" fill="#3cba92" font-size="10" text-anchor="middle" font-weight="bold">📊 Dashboard Ejecutivo</text>
+                                        <text x="200" y="224" fill="#9ca3af" font-size="7" text-anchor="middle">Toma de Decisiones Liderazgo</text>
+
+                                        <!-- Connections -->
+                                        <path d="M 65 70 L 65 130 L 130 130" stroke="#6366f1" stroke-width="2" fill="none"/>
+                                        <path d="M 335 70 L 335 130 L 270 130" stroke="#3b82f6" stroke-width="2" fill="none"/>
+                                        <path d="M 200 160 L 200 195" stroke="#3cba92" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Backlog -->
+                    <div>
+                        <h3 class="section-title">Backlog del Producto Académico</h3>
+                        <p class="section-desc">Planificación ágil de Historias de Usuario priorizadas para el desarrollo del portal corporativo y el channel manager.</p>
+                        
+                        <div class="glass-panel backlog-table-wrapper" style="padding: 0;">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Historia de Usuario (User Story)</th>
+                                        <th>Prioridad</th>
+                                        <th>Impacto en Ocupación</th>
+                                        <th>Complejidad (Puntos)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>HU-01</strong></td>
+                                        <td>Como huésped, deseo filtrar las cabañas disponibles por destino (playa, sierras, montaña) y fecha para planificar mi estadía en un solo sitio consolidado.</td>
+                                        <td><span class="backlog-badge alta">Alta</span></td>
+                                        <td>Crítico</td>
+                                        <td>5 Pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>HU-02</strong></td>
+                                        <td>Como administrador, deseo que las reservas concretadas en la web propia bloqueen automáticamente el inventario en Booking.com para evitar overbookings.</td>
+                                        <td><span class="backlog-badge alta">Alta</span></td>
+                                        <td>Crítico</td>
+                                        <td>8 Pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>HU-03</strong></td>
+                                        <td>Como líder, deseo disponer de un simulador financiero de comisiones para planificar estrategias de incentivos en canales directos.</td>
+                                        <td><span class="backlog-badge media">Media</span></td>
+                                        <td>Medio</td>
+                                        <td>3 Pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>HU-04</strong></td>
+                                        <td>Como huésped, quiero recibir un e-mail automático con el código de acceso digital e información de bienvenida una vez confirmada la reserva.</td>
+                                        <td><span class="backlog-badge baja">Baja</span></td>
+                                        <td>Bajo (Fidelización)</td>
+                                        <td>5 Pts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>HU-05</strong></td>
+                                        <td>Como líder administrativo, deseo un sistema de sugerencias de publicidad (alertas) en base a la disparidad de ocupación de las cabañas.</td>
+                                        <td><span class="backlog-badge alta">Alta</span></td>
+                                        <td>Muy Alto</td>
+                                        <td>5 Pts</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loaded database first, then app.js -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
